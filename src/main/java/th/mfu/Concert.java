@@ -5,11 +5,11 @@ import java.util.Date;
 public class Concert {
 
     //TODO: add attributes
-    private int id;
-    private String title;
-    private String performer;
-    private Dateate date;
-    private String description;
+    private int id ;
+    public String title;
+    public String performer;
+    public Date date;
+    public String description;
     public Concert() {
     }
     public Concert(String title, String description) {
@@ -17,10 +17,13 @@ public class Concert {
         this.title = title;
         this.description = description;
     }
- 
     //TODO: add getters and setters for all attributes
-    // You can use Source action/generate getter setter function 
-    
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getTitle() {
         return title;
     }
@@ -33,21 +36,19 @@ public class Concert {
     public void setPerformer(String performer) {
         this.performer = performer;
     }
+    public Date getDate() {
+        return date;
+    }
+    public void setDate(Date date) {
+        this.date = date;
+    }
     public String getDescription() {
         return description;
     }
     public void setDescription(String description) {
         this.description = description;
     }
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Date getDate() {
-        return date;
-    }
+    
+    // You can use Source action/generate getter setter function
+   
 }
